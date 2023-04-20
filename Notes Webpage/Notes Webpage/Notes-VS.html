@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Visual Studio Notes</title>
+    <link href="Notes-Webpage.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #1e90ff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        li {
+            float: left;
+        }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+                li a:hover:not(.active) {
+                    background-color: #4169E1;
+                }
+        .active {
+            background-color: #0000CD;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="./Notes-Home.html">Home</a></li>
+        <li><a href="./Notes-C++.html">C++</a></li>
+        <li><a href="./Notes-HTML.html">HTML</a></li>
+        <li><a href= "./Notes-Java.html">Java</a></li>
+        <li><a href="./Notes-JS.html">Java Script</a></li>
+        <li><a href="./Notes-Python.html">Python</a></li>
+        <li><a class="active" href="./Notes-VS.html">Visual Studio</a></li>
+    </ul>
+    <div style="padding: 20px; margin-top: 30px; height: 1500px;">
+        <h1 class="title"> Getting Set up With Visual Studio</h1>
+        <h2 class='title'>Introduction</h2>
+        <div class="Introduction">
+            <p>
+                Microsoft Visual Studio is an application that allows users to create and develop programming projects across multiple languages in one location. Visual Studio has options for all
+                kinds of programmers and developers.  Microsoft offers at least one option across the three major Operating systems and at least two options for Windows and Mac users.  The 
+                install is a personalized option for project specific users or someone looking to explore different languages.  All of that information and more is housed in this section of the
+                site, the overall goal is to compile some basic user guides to Microsoft Visual Studio, including installing the application, starting your projects and more.  
+                </p>
+            <p>
+                See the menu below to easily find the topic or task you are looking for.
+            </p>
+            <nav>
+                <table>
+                    <tr>
+                     <td><a href="#Installation">Installing Visual Studio</a></td>
+                    </tr>
+                    <tr>
+                     <td><a href="#Project">Starting a Project in Visual Studio</a></td>
+                    </tr>
+                    <td><a href="#Running"> Compiling Your Program</a></td>
+                </table>
+             </nav>
+        </div>
+
+        <div id="Visual Studio">
+            <div id="Installation">
+                <h2>Installing Visual Studio</h2>
+                <img class="textwrapright" src="https://drive.google.com/uc?export=view&id=1ABkVDXv6YHy1Pqkjfz2A1axr11IHKUIR" height="250" width="450"/>
+                <p>
+                    Installing Visual Studio is a rather straight forward procedure.  The installation page can be found by doing a general search on a browser of your choosing, just be sure to
+                    look for the licensed Microsoft page. Additionally, by navigating to the Microsoft homepage click on the 'All Microsoft' tab in the top right corner of the screen and click on
+                    the 'Visual Studio' link under the 'Developer & IT' tab.  For simplicity sake <a href="https://visualstudio.microsoft.com/downloads/">Click Here</a>  to redirect to the installation
+                    page.
+                <p>
+                    Then once on the installation page, you are met with multiple install options and make sure to find the corresponding OS install package.  The page offers install packages exclusively
+                    Windows and Mac, Microsoft also offers an option that runs on Mac, Window and Linux called 'Visual Studio Code.' Microsoft advertises this option for Java and web developers due to
+                    but it still has plenty of opportunity for other programming languages
+
+                </p>
+                <p>
+                    Once the installation has finished an application should show up in your programs folder called 'Visual Studio Installer', find the application, and open it.  Once opened you will be
+                    met with a window of workload options, it is important to read and understand what tools are included in the following packages as they center around certain developmental topics.
+                    If you are unsure which package best suits your needs or are concerned about the installation size, see the 'Installation details' section on the far-right side of the window or
+                    navigate to the 'Individual Components' tab at the top of the window.  In the same ribbon at the top of the window should be a tab labeled 'Installation Locations', here you can change
+                    the location that the different workload and component packages install to.
+
+                </p>
+            </div>
+
+            <div id="Project">
+                <h2>Starting a Project in Visual Studio</h2>
+                <p>
+                    Before beginning a project before familiar with the interface of Visual Studio. Depending on your programming language of choice some items may be slightly different, but overall
+                    everything should function relatively the same. Just like all other Microsoft products in the header of the window you will find a 'File', 'Edit', and 'View' along with some other
+                    options. The key tabs to note here are the File, Edit, and Help tabs, the File tab allows us to open projects using the open function and save projects using the Save and Save All
+                    functions.  The Edit tab allows us to utilize tools like Undo, Redo, Cut, and Paste while just about everything in this tab is possible using keyboard shortcuts, it�s good to know
+                    where these and similar tools are located.  Lastly, is covering the Help tab which houses Visual Studio software information and community help.  Inside the Help tab you will find
+                    a 'Check for software updates' option, this is an important feature to look at on a consistent basis as keeping an update software development program can help the programmer make
+                    most of the software.  Additionally, the 'About Visual Studio' option will inform us what version we are running on and what packages we have installed.  The final key feature to
+                    in the Help tab is the 'View Help' option which opens up the Microsoft hosted forums for any errors or issues that you may run into, if you find an error code in your debug tool that
+                    you don't understand it may be worth looking at the webpage for assistance.  You can view that page
+                    <a href="https://learn.microsoft.com/en-us/visualstudio/ide/quickstart-ide-orientation?f1url=%3FappId%3DDev16IDEF1%26l%3Den-US%26k%3Dk(MSDNSTART)%26rd%3Dtrue&view=vs-2022">Here</a>.
+                </p>
+                <p>
+                    Another important step to setting up Visual Studio is creating a location to save all your projects.  It is recommended that you create folder dedicated to Visual Studio projects
+                    that is easily accessible.  Make sure you name it something memorable and it isn't buried inside a plethora of other folders, notice how my folder is labeled something simple
+                    like 'VS Projects' and that my folder location is not a long address.
+                </p>
+                <img src="https://drive.google.com/uc?export=view&id=1Ya-PMFBaVA3wrIawjLgr7HjiQamA0L6-" width="600" height="150" class="center" />
+                <p>
+                    Once you have created your folder and are ready to start your project, go and open up your Visual Studio Application.  Once opened you will be met with a window with options
+                    to start a project, here you will want to select 'Open local folder'.  You'll want to find the folder that you just created a moment ago, select the folder and hit the open
+                    button in your file explorer.  At first you will be met with a blank Visual Studio workspace window; you'll want to find 'File' in the top left-hand corner of the window and
+                    hover over the 'New' option and select 'File.'  Upon doing so you will once again be met with another window, allowing you to select the file format of your choosing.  Note
+                    that on the left-hand side of that window there are options to sort by programming language.  Alternatively, in the solution explorer on the right-hand side of the Visual
+                    Studio workspace is the solution explorer, here you can right-click underneath your folder and hover over the 'Add' option and select 'New File.'  Notice that the file does not
+                    automatically format unless specified.  Here, we can name the file something of your choosing, I would recommend keeping the file name short and unique as the file will more
+                    than likely by referenced somewhere in the program itself.
+                </p>
+                <p>
+                    After choosing a name for your file, it is important to add the correct file extension to the end of the name.  The file will be formatted as: "file-name.extension".  Each 
+                    language holds a unique extension that is added to the end of each file name, see the table below to see the programming language and the file extension.
+                </p>
+                <table class="mytable">
+                    <tr>
+                        <th>Programming Language</th>
+                        <th>File Extension</th>
+                        <th>Example name</th>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>.cpp</td>
+                        <td>example.cpp</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>.html</td>
+                        <td>example.html</td>
+                    </tr>
+                    <tr>
+                        <td>Java Script</td>
+                        <td>.js</td>
+                        <td>example.js</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>.py</td>
+                        <td>example.py</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Running">
+                <h2>Compiling your project</h2>
+                <p>
+                    Once you have completed your project, it is important to run your program and your debugger tool to make sure the program runs as intended.  Each language configures slightly
+                    different which will be covered below
+                </p>
+                <h3>C++</h3>
+                <img src="https://drive.google.com/uc?export=view&id=1YTm8BuqLPe-lqS9aBIOe3VEirOoDvxWp" width="1850" height="65"/>
+                <p>
+                    Running a C++ is accessible with two options.  In the ribbon at the top of your screen there should be a green play button with some text to the right that says
+                    'Local Windows Debugger' and another green play button just to the right of that.  Running the local debugger will display some diagnostic tools on the right side of the window
+                    and open a command prompt screen with your program.  While the start without debugging option will open the same command prompt without the diagnostic tools on the right side.
+                </p>
+                <h3>HTML</h3>
+                <p>
+                    Running an HTML program is as easy as saving a file.  Really, all you need to do is save your project in the file folder we created earlier, then you will want to locate
+                    that folder and locate the chrome icon with the name of your file in that folder.  You should be able to double-click the icon and it should automatically pull your web page
+                    up in a new tab.  If you are unhappy with some of the looks of your page, you can make your changes in visual studio, save the file, and refresh the chrome page, which should
+                    show the new changes
+                </p>
+                <h3>Java</h3>
+                <p>
+                    Unfortunately, Visual Studio will not run JavaScript code on its own, you'll notice that there are similar looking play buttons in the ribbon of the visual studio window
+                    and when you click them a command prompt will show up on screen and quickly disappear.  You will have to install some kind of external code editor in addition to the NodeJS
+                    software as well.
+                </p>
+                <h3>Python</h3>
+                <img src="https://drive.google.com/uc?export=view&id=1YebXd1clW6OU-eINkXG-PfPSiBlt1goF" width="1850" height="65"/>
+                <p>Python has a nearly identical set up to C++, yet again in the ribbon of your window you will see to play buttons.  Similar to C++ one option is a run without debugging tools
+                and the other will run with debugging tools.  After selecting one of the options, a command prompt window will open and display your code.</p>
+            </div>
+</body>
+</html>
