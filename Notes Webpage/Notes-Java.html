@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Programming Notes</title>
+    <title>Java Notes</title>
     <link href="Notes-Webpage.css" rel="stylesheet" />
     <style>
         body {
@@ -41,67 +41,55 @@
         <li><a href="./Notes-Home.html">Home</a></li>
         <li><a href="./Notes-C++.html">C++</a></li>
         <li><a href="./Notes-HTML.html">HTML</a></li>
-        <li><a class="active" href="./Notes-Java.html">Java Script</a></li>
+        <li><a class="active" href="./Notes-Java.html">Java</a></li>
+        <li><a href="./Notes-JS.html">Java Script</a></li>
         <li><a href="./Notes-Python.html">Python</a></li>
         <li><a href="./Notes-VS.html">Visual Studio</a></li>
     </ul>
     <div style="padding: 20px; margin-top: 30px; height: 1500px;">
-        <h1 class="title"> Getting Set up With Visual Studio</h1>
-        <h2>Javascript basics</h2>
-        <h3>Console</h3>
-        <p>
-            In JavaScript, the console is the display for the code that you just wrote.  At nearly any point during your code, you can post to the console by using the following code like
-            'console.log();'. You can make the console display anything like a word, letter, or number by entering that character in the parathensis.  One example would be running a code of:
-            'console.log(5);' this will display'5' to the console.
-        </p>
-        <img class="center" src="https://drive.google.com/uc?export=view&id=1fJ-W_59oWVRiyTv9IxguyAKOiqwkBd_C" />
-        <h3>Using the Comment Function</h3>
-        <p>
-            When addiding comments to your code, there are two options to access the comment function.  The first is '//', if you are using Visual studio it should automatically turn your text
-            green.  Additionally, you can also use '/*' which will also turn your text green if using Visual Studio.  The one major difference between the two comment styles comes with using
-            the '/*' function, when using that comment function you must close the comment with '*/' (See image).
-        </p>
-        <img class="center" src="https://drive.google.com/uc?export=view&id=1RYXyEz8PySGEr0x-8Fqcp555P6uUkHAq" />
-        <h3>Mathmatical Operators</h3>
-        <p>
-            Inside our program lines we can give our program mathmatical equtions and have the answer display through the console log function.  It is important to note that if you put a mathmatical
-            equation in the parathensis of your console log statement, it will only display the answer not the entire equation.  There are 5 major mathmatical equations for JavaScript: Addition,
-            Subtraction, Multiply, Divide, and Remainder which are expressed as so:
-        </p>
-        <table class="mytable">
-            <tr>
-                <th>Symbol</th>
-                <th>Function</th>
-            </tr>
-            <tr>
-                <td>+</td>
-                <td>Add</td>
-            </tr>
-            <tr>
-                <td>-</td>
-                <td>Subtract</td>
-            </tr>
-            <tr>
-                <td>*</td>
-                <td>Multiply</td>
-            </tr>
-            <tr>
-                <td>/</td>
-                <td>Divide</td>
-            </tr>
-            <tr>
-                <td>%</td>
-                <td>Remainder</td>
-            </tr>
-        </table>
-        <h3>Creating a String Series</h3>
-        <p>
-            A string is established by creating a console log and entering a word or phrase, either by using the ' ' or " " symbols.  We are able to combine two or more strings of code by 
-            adding an addition operator (+) between two or more strings. One main function explained later is recalling previously established characters or variables that can be or have been
-            identified by another string of code or by a user input. We are able to mix numbers and words together in one string compilation, by putting the number in quotes or by leaving out 
-            of the quotes.  Another note to add, when adding a series of strings together make sure to leave space either at the begining or end inside the quotes to make sure the text spaces
-            correctly.
-        </p>
-        <img class="center" src="https://drive.google.com/uc?export=view&id=1YG0QnfAwRSOI_XDyTgHftlY2WgaGMaTP"/>
+
+
+        <div style="padding: 20px; margin-top: 30px; height: 1500px;">
+            <h1 class="title"> Getting Started with Java</h1>
+            <h2>Javascript basics</h2>
+            <nav>
+                <table>
+                    <tr>
+                     <td><a href="#Printing">Printing</a></td>
+                    </tr>
+                </table>
+             </nav>
+             <div id="Printing"></div>
+            <h3>Printing</h3>
+            <p>In order to start a java program, there are a couple things to watch for, first is where you start your program.  In most IDEs (Integrated development environment) you
+                will see a couple different headers one may include 'public class' which is followed by the name of your file. You will want to look for a header that is labled: 'public static void main(String[] args)'
+                which is where you will want to leave most of your code, atleast for the time being.  You should see an opening and closing braces('{}') you should put your code between these
+                two braces in order for the code to properly execute. 
+            </p>
+            <h4>Printing Syntax</h4>
+            <p>
+                Printing in Java can be done by a single line, yet there are different types outputs that the computer can create.  Two basic and most common lines used to print an output to the console are:
+                'System.out.print();' and 'System.out.println();' the item(s) that you want to print will go inside the parenthese.  The first print statement will not space your print statements on two 
+                different line, but the second will.  The 'ln' at the end of the second statement tells the computer to skip to the next line after printing the following statement.  It is worth noting that you 
+                add additional inputs to print certain items, things like strings and words should be enclosed in quotation marks, single letters can either be enclosed by single quotation marks ('') or double quotaion 
+                marks (""), though the IDE may give a warning for using double quotaions the program should execute just fine.  User defined variables can be refrenced by the actual variable name as seen below.
+
+            </p>
+            <p>
+                    It is important to note that the letter 's' in both print
+                statements is capitalized, this is due to the structure of the language and how it was built.  The computer will only recognize the print statement if it written exactly as stated above otherwise the 
+                IDE will send an error.  Next, is the semi-colon at the end of the statement, this is important in java as a whole, because it signifies the end of the statement, if you forget the semi-colon you will
+                get a compiler error and the program will not run.
+            </p>
+        
+            <h4>Printing Computations</h4>
+            <P>
+                Along side output static information the print function has the ability to compute sums of numeric values from the user and from variable stored values.  Writing a line such as 'System.out.println(2+2);'
+                will display the number four to the console.  The same will occur if you create two variable, say 'a' and 'b' and you assign the value of two to both variables, writing 'System.out.print(a + b);' will 
+                also output the number four to the console.
+            </P>
+
+            
+            </div>
 </body>
 </html>
